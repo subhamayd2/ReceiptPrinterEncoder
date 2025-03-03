@@ -196,7 +196,7 @@ class ReceiptPrinterEncoder {
   #reset() {
     this.#queue = [];
     this.#codepage = this.#options.language == 'esc-pos' ? 'cp437' : 'star/standard';
-    this.#state.codepage = 0;
+    this.#state.codepage = -1;
     this.#state.font = 'A';
   }
 
