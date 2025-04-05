@@ -2042,8 +2042,12 @@ const printerDefinitions = {
 	'bixolon-srp350': {vendor:'Bixolon',model:'SRP-350',media:{dpi:180,width:80},capabilities:{language:'esc-pos',codepages:'bixolon/legacy',fonts:{A:{size:'12x24',columns:42},B:{size:'9x17',columns:56}},barcodes:{supported:true,symbologies:['upca','upce','ean13','ean8','code39','itf','codabar','code93','code128']},qrcode:{supported:false,models:[]},pdf417:{supported:false},cutter:{feed:4}}},
 	'bixolon-srp350iii': {vendor:'Bixolon',model:'SRP-350III',media:{dpi:180,width:80},capabilities:{language:'esc-pos',codepages:'bixolon',fonts:{A:{size:'12x24',columns:42},B:{size:'9x17',columns:56},C:{size:'9x24',columns:56}},barcodes:{supported:true,symbologies:['upca','upce','ean13','ean8','code39','itf','codabar','code93','code128']},qrcode:{supported:true,models:['2']},pdf417:{supported:true},cutter:{feed:4}}},
 	'citizen-ct-s310ii': {vendor:'Citizen',model:'CT-S310II',media:{dpi:203,width:80},capabilities:{language:'esc-pos',codepages:'citizen',fonts:{A:{size:'12x24',columns:48},B:{size:'9x24',columns:64},C:{size:'8x16',columns:72}},barcodes:{supported:true,symbologies:['upca','upce','ean13','ean8','code39','itf','codabar','code93','code128','gs1-databar-omni','gs1-databar-truncated','gs1-databar-limited','gs1-databar-expanded']},qrcode:{supported:true,models:['1','2']},pdf417:{supported:true},cutter:{feed:3}}},
+	'epson-tm-m30ii': {vendor:'Epson',model:'TM-m30II',interfaces:{usb:{productName:'TM-m30II'}},media:{dpi:203,width:80},capabilities:{language:'esc-pos',codepages:'epson',fonts:{A:{size:'12x24',columns:48},B:{size:'10x24',columns:57},C:{size:'9x17',columns:64}},barcodes:{supported:true,symbologies:['upca','upce','ean13','ean8','code39','itf','codabar','code93','code128','gs1-databar-omni','gs1-databar-truncated','gs1-databar-limited','gs1-databar-expanded','code128-auto']},qrcode:{supported:true,models:['1','2']},pdf417:{supported:true},cutter:{feed:4}}},
+	'epson-tm-m30iii': {vendor:'Epson',model:'TM-m30III',interfaces:{usb:{productName:'TM-m30III'}},media:{dpi:203,width:80},capabilities:{language:'esc-pos',codepages:'epson',fonts:{A:{size:'12x24',columns:48},B:{size:'10x24',columns:57},C:{size:'9x17',columns:64}},barcodes:{supported:true,symbologies:['upca','upce','ean13','ean8','code39','itf','codabar','code93','code128','gs1-databar-omni','gs1-databar-truncated','gs1-databar-limited','gs1-databar-expanded','code128-auto']},qrcode:{supported:true,models:['1','2']},pdf417:{supported:true},cutter:{feed:4}}},
 	'epson-tm-p20ii': {vendor:'Epson',model:'TM-P20II',media:{dpi:203,width:58},capabilities:{language:'esc-pos',codepages:'epson',fonts:{A:{size:'12x24',columns:32},B:{size:'9x24',columns:42},C:{size:'9x17',columns:42},D:{size:'10x24',columns:38},E:{size:'8x16',columns:48}},barcodes:{supported:true,symbologies:['upca','upce','ean13','ean8','code39','itf','codabar','code93','code128','gs1-databar-omni','gs1-databar-truncated','gs1-databar-limited','gs1-databar-expanded','code128-auto']},qrcode:{supported:true,models:['1','2']},pdf417:{supported:true},images:{mode:'raster'},cutter:{feed:3}}},
+	'epson-tm-t20ii': {vendor:'Epson',model:'TM-T20II',interfaces:{usb:{productName:'TM-T20II'}},media:{dpi:203,width:80},capabilities:{language:'esc-pos',codepages:'epson',fonts:{A:{size:'12x24',columns:48},B:{size:'9x17',columns:64}},barcodes:{supported:true,symbologies:['upca','upce','ean13','ean8','code39','itf','codabar','code93','code128','gs1-databar-omni','gs1-databar-truncated','gs1-databar-limited','gs1-databar-expanded']},qrcode:{supported:true,models:['1','2']},pdf417:{supported:true},cutter:{feed:4}}},
 	'epson-tm-t20iii': {vendor:'Epson',model:'TM-T20III',interfaces:{usb:{productName:'TM-T20III'}},media:{dpi:203,width:80},capabilities:{language:'esc-pos',codepages:'epson',fonts:{A:{size:'12x24',columns:48},B:{size:'9x17',columns:64}},barcodes:{supported:true,symbologies:['upca','upce','ean13','ean8','code39','itf','codabar','code93','code128','gs1-databar-omni','gs1-databar-truncated','gs1-databar-limited','gs1-databar-expanded']},qrcode:{supported:true,models:['1','2']},pdf417:{supported:true},cutter:{feed:4}}},
+	'epson-tm-t20iv': {vendor:'Epson',model:'TM-T20IV',interfaces:{usb:{productName:'TM-T20IV'}},media:{dpi:203,width:80},capabilities:{language:'esc-pos',codepages:'epson',fonts:{A:{size:'12x24',columns:48},B:{size:'9x17',columns:64}},barcodes:{supported:true,symbologies:['upca','upce','ean13','ean8','code39','itf','codabar','code93','code128','gs1-databar-omni','gs1-databar-truncated','gs1-databar-limited','gs1-databar-expanded','code128-auto']},qrcode:{supported:true,models:['1','2']},pdf417:{supported:true},cutter:{feed:4}}},
 	'epson-tm-t70': {vendor:'Epson',model:'TM-T70',media:{dpi:180,width:80},capabilities:{language:'esc-pos',codepages:'epson/legacy',fonts:{A:{size:'12x24',columns:42},B:{size:'9x17',columns:56}},barcodes:{supported:true,symbologies:['upca','upce','ean13','ean8','code39','itf','codabar','code93','code128']},qrcode:{supported:true,models:['1','2']},pdf417:{supported:true},images:{mode:'raster'},cutter:{feed:4}}},
 	'epson-tm-t70ii': {vendor:'Epson',model:'TM-T70II','interface':{usb:{productName:'TM-T70II'}},media:{dpi:180,width:80},capabilities:{language:'esc-pos',codepages:'epson',fonts:{A:{size:'12x24',columns:42},B:{size:'9x17',columns:56}},barcodes:{supported:true,symbologies:['upca','upce','ean13','ean8','code39','itf','codabar','code93','code128','gs1-databar-omni','gs1-databar-truncated','gs1-databar-limited','gs1-databar-expanded']},qrcode:{supported:true,models:['1','2']},pdf417:{supported:true},images:{mode:'raster'},cutter:{feed:4}}},
 	'epson-tm-t88ii': {vendor:'Epson',model:'TM-T88II',media:{dpi:180,width:80},capabilities:{language:'esc-pos',codepages:'epson/legacy',fonts:{A:{size:'12x24',columns:42},B:{size:'9x17',columns:56}},barcodes:{supported:true,symbologies:['upca','upce','ean13','ean8','code39','itf','codabar','code93','code128']},qrcode:{supported:true,models:['1','2']},pdf417:{supported:true},cutter:{feed:4}}},
@@ -2250,7 +2254,7 @@ class ReceiptPrinterEncoder {
   #reset() {
     this.#queue = [];
     this.#codepage = this.#options.language == 'esc-pos' ? 'cp437' : 'star/standard';
-    this.#state.codepage = 0;
+    this.#state.codepage = -1;
     this.#state.font = 'A';
   }
 
@@ -3282,9 +3286,23 @@ class ReceiptPrinterEncoder {
    * @return {array}         All the commands currently in the queue
    */
   commands() {
+    let requiresFlush = true;
+
+    /* Determine if the last command is a pulse or cut, the we do not need a flush */
+
+    let lastLine = this.#queue[this.#queue.length - 1];
+  
+    if (lastLine) {
+      let lastCommand = lastLine[lastLine.length - 1];
+
+      if (lastCommand && [ 'pulse', 'cut' ].includes(lastCommand.type)) {
+        requiresFlush = false;
+      }
+    }
+
     /* Flush the printer line buffer if needed */
 
-    if (this.#options.autoFlush && !this.#options.embedded) {
+    if (requiresFlush && this.#options.autoFlush && !this.#options.embedded) {
       this.#composer.add(
           this.#language.flush(),
       );
