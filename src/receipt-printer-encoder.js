@@ -1228,9 +1228,23 @@ class ReceiptPrinterEncoder {
    * @return {array}         All the commands currently in the queue
    */
   commands() {
+    let requiresFlush = true;
+
+    /* Determine if the last command is a pulse or cut, the we do not need a flush */
+
+    let lastLine = this.#queue[this.#queue.length - 1];
+  
+    if (lastLine) {
+      let lastCommand = lastLine[lastLine.length - 1];
+
+      if (lastCommand && [ 'pulse', 'cut' ].includes(lastCommand.type)) {
+        requiresFlush = false;
+      }
+    }
+
     /* Flush the printer line buffer if needed */
 
-    if (this.#options.autoFlush && !this.#options.embedded) {
+    if (requiresFlush && this.#options.autoFlush && !this.#options.embedded) {
       this.#composer.add(
           this.#language.flush(),
       );
