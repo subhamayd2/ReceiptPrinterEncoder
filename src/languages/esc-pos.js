@@ -474,13 +474,13 @@ class LanguageEscPos {
     /* Encode images with ESC * */
 
     if (mode == 'column') {
-      result.push(
-          {
-            type: 'line-spacing',
-            value: '24 dots',
-            payload: [0x1b, 0x33, 0x24],
-          },
-      );
+    //   result.push(
+    //       {
+    //         type: 'line-spacing',
+    //         value: '24 dots',
+    //         payload: [0x1b, 0x33, 0x24],
+    //       },
+    //   );
 
       getColumnData(width, height).forEach((bytes) => {
         result.push(
@@ -495,13 +495,13 @@ class LanguageEscPos {
         );
       });
 
-      result.push(
-          {
-            type: 'line-spacing',
-            value: 'default',
-            payload: [0x1b, 0x32],
-          },
-      );
+    //   result.push(
+    //       {
+    //         type: 'line-spacing',
+    //         value: 'default',
+    //         payload: [0x1b, 0x32],
+    //       },
+    //   );
     }
 
     /* Encode images with GS v */

@@ -370,13 +370,13 @@ class LanguageStarPrnt {
     const getPixel = (x, y) => typeof image.data[((width * y) + x) * 4] === 'undefined' ||
                                       image.data[((width * y) + x) * 4] > 0 ? 0 : 1;
 
-    result.push(
-        {
-          type: 'line-spacing',
-          value: '24 dots',
-          payload: [0x1b, 0x30],
-        },
-    );
+    // result.push(
+    //     {
+    //       type: 'line-spacing',
+    //       value: '24 dots',
+    //       payload: [0x1b, 0x30],
+    //     },
+    // );
 
     for (let s = 0; s < height / 24; s++) {
       const y = s * 24;
@@ -433,13 +433,13 @@ class LanguageStarPrnt {
       );
     }
 
-    result.push(
-        {
-          type: 'line-spacing',
-          value: 'default',
-          payload: [0x1b, 0x7a, 0x01],
-        },
-    );
+    // result.push(
+    //     {
+    //       type: 'line-spacing',
+    //       value: 'default',
+    //       payload: [0x1b, 0x7a, 0x01],
+    //     },
+    // );
 
     return result;
   }
